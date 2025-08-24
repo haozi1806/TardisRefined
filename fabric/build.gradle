@@ -195,21 +195,9 @@ if (true) {
                 }
             }
 
-            if (CURSE_API_KEY != "") {
-                curseforge {
-                    token = CURSE_API_KEY
-                    id = "782697"
-                    gameVersions.addAll "Java 17", "$rootProject.minecraft_version"
-                }
-            }
+            
 
-            if (MODRINTH_TOKEN != "") {
-                modrinth {
-                    token = MODRINTH_TOKEN
-                    id = "nqVt6aES"
-                    version = "fabric-$project.version"
-                }
-            }
+            
         }
     }
 }
